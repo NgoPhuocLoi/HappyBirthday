@@ -1,0 +1,91 @@
+@media (max-width:739px){
+    .hide-on-mobile{
+        display: none;
+    }
+    body{
+        height: calc(100vh - 30px);
+    }
+    .icons{
+        margin-top: 30px;
+    }
+
+    .giftbox__top{
+        width: 200px;
+        height: 30px;
+    }
+
+    .giftbox__bottom{
+        width: 160px;
+        height: 100px;
+    }
+
+    .giftbox__top::after {
+        content: "";
+        display: block;
+        width: 36px;
+        height: 100%;
+    }
+
+    .giftbox__bottom::after {
+        content: "";
+        display: block;
+        width: 36px;
+        height: 100%;
+    }
+
+    .giftbox__bottom-text{
+        font-size: 30px;
+    }
+    
+    .icons .row-icon span{
+        font-size: 40px;
+    }
+
+    /* gif-area */
+    .gif-cake{
+        width: 200px;
+        z-index: 2;
+    }
+
+    .gif-girl{
+        width: 100px;
+        height: 100px;
+    }
+
+    .gif-boy{
+        /* display: block; */
+        width: 300px;
+        bottom: 20px;
+    }
+
+    .gif-girl{
+        display: none;
+    }
+
+    .gif-firework1{
+        /* opacity: 1; */
+        width: 100px;
+        top: 100px;
+    }
+
+    .gif-firework2{
+        /* opacity: 1; */
+        top: 0px;
+        width: 130px;
+    }
+
+
+}
+
+@media (min-width:1440px){
+    :root{
+        --card-height:700px
+    }
+    .wrap, #card-front{
+        height: var(--card-height);
+    }
+
+    #card-inside{
+        height: var(--card-height);
+    }
+}
