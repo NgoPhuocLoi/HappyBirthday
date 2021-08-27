@@ -38,7 +38,7 @@
     }
     
     .icons .row-icon span{
-        font-size: 40px;
+        font-size: 30px;
     }
 
     /* gif-area */
@@ -72,6 +72,34 @@
         /* opacity: 1; */
         top: 0px;
         width: 130px;
+    }
+
+    .card-container{
+        background-size: contain;
+        /* display: flex; */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .candle{
+        top: unset;
+        height: 40px;
+    }
+
+    .candle__num{
+        width: 40px;
+    }
+
+    .candle__num--num-6{
+        margin-left: -25px;
+    }
+
+    .images-scroll{
+        margin-top: 100px;
+    }
+
+    .card-mobile{
+        display: block;
     }
 
 

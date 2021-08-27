@@ -30,6 +30,9 @@ var body = document.querySelector('body'),
 
     candle = document.querySelector('.candle')
 
+    MB_cardOverlay = document.querySelector('.card-mobile__overlay')
+    MB_cardCloseBtn = document.querySelector('.card-mobile__btn')
+
 
 // Open giftbox
 giftbox.addEventListener('click',() => {
@@ -70,7 +73,12 @@ gifCake.addEventListener('click',() =>{
             imgSlide.remove()
         },2000)
         body.style.height = 'fit-content'
-        cardContainer.style.display = 'block'
+        if(document.body.offsetWidth < 740){
+            cardContainer.style.display = 'flex'
+        }else{
+            cardContainer.style.display = 'block'
+        }
+        
     },12000)
 })
 
@@ -131,4 +139,23 @@ function hideCandle(){
     }else{
         candle.style.display = 'block'
     }
+}
+
+// -----------------------------------------------------------------
+// card mobile
+MB_cardOverlay.onclick = () => {
+    MB_cardOverlay.classList.add('card-mobile__overlay--slide')
+}
+
+MB_cardCloseBtn.onclick = () => {
+    cardContainer.classList.add('hide-card')
+    candle.style.opacity = '1'
+    setTimeout(() => {
+        imgScroll.style.display = 'block'
+        
+    },1000)
+
+    setTimeout(() => {
+        cardContainer.remove()
+    },4000)
 }

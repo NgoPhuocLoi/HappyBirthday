@@ -545,7 +545,7 @@ div.show-container{
     /* opacity: 0; */
     transition: 3s;
     transform: scale(0);
-    opacity: 0;
+    /* opacity: 0; */
     /* display: none; */
     /* height: 500px; */
 }
@@ -575,13 +575,9 @@ div.show-container{
     height: auto;  
     display: inline-block;
     border: 5px solid #fff;  
-    /* filter: grayscale(80%); */
     cursor: pointer;
     transition: .3s;
-}
-
-.image-single img:hover{
-    filter: grayscale(0);
+    border-radius: 10px;
 }
 
 .img-one{
@@ -878,4 +874,61 @@ footer {
     line-height: 1.6;
     color: #888;
     text-align: center;
-  }
+}
+
+.card-mobile{
+    width: calc(100% - 40px);
+    height: 500px;
+    background-color: #FFEFEF;
+    border-radius: 20px;
+    -webkit-box-shadow: inset 2px 0 1px rgba(0, 0, 0, .05);
+    -moz-box-shadow: inset 2px 0 1px rgba(0, 0, 0, .05);
+    box-shadow: inset 2px 0 1px rgba(0, 0, 0, .05);
+    position: relative;
+    overflow: hidden;
+    display: none;
+}
+
+.card-mobile__overlay{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 1;
+    /* transition: 2s; */
+}
+
+.card-mobile__overlay--slide{
+    animation: slideTop 1s linear forwards;
+}
+
+@keyframes slideTop{
+    from{
+
+    }
+    to{
+        transform: translateY(-100%);
+    }
+}
+
+
+.card-mobile__content{
+    height: 100%;
+    padding: 30px 20px;
+    line-height: 1.4;
+}
+
+.card-mobile__btn{
+    position: absolute;
+    background-color: #e6cccc;
+    border-radius: 4px;
+    padding: 10px;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.card-mobile__btn:hover{
+    opacity: .8;
+}
