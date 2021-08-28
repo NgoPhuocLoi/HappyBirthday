@@ -95,11 +95,15 @@
     }
 
     .images-scroll{
-        margin-top: 100px;
+        margin-top: 40px;
     }
 
     .card-mobile{
         display: block;
+    }
+
+    .candle-mobile{
+        display: flex;
     }
 
 

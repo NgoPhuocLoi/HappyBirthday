@@ -29,7 +29,7 @@ body {
     display: flex;
     /* display: none; */
     justify-content: center;
-    z-index: 2;
+    z-index: 3;
 }
 
 .giftbox{
@@ -352,7 +352,7 @@ to {
     display: flex;
     justify-content: space-between;
     padding: 0 20px;
-    /* display: none; */
+    display: none;
 }
 
 .img-slide__item{
@@ -430,7 +430,7 @@ to {
     justify-content: center;
     transition: background 1s;
     /* display: none; */
-    z-index: 1;
+    z-index: 2;
 }
 
 .gif-cake{
@@ -639,8 +639,12 @@ div.show-container{
     width: 200px;
 }
 
-.candle__num--num-6{
+.candle__num--num-9{
     margin-left: -100px;
+}
+
+.candle__num--num-8{
+    margin-left: -80px;
 }
 
 
@@ -697,6 +701,7 @@ div.row-hide{
     right: 0;left: 0;
     bottom: 0;
     display: none;
+    z-index: 1;
 }
 
 .hide-card{
@@ -894,10 +899,34 @@ footer {
     width: 100%;
     top: 0;
     height: 100%;
-    background-color: rgba(0, 0, 0, .8);
+    background-color: #ff6c6c;
     z-index: 1;
     /* transition: 2s; */
 }
+
+.card-mobile__overlay-title{
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Nobile', sans-serif;
+    font-style: italic;
+    font-size: 40px;
+    text-shadow: 4px 4px 0px rgb(0 0 0 / 15%), 1px 1px 0 rgb(255 200 200), 2px 2px 0 rgb(255 150 150), 3px 3px 0 rgb(255 125 125);
+    color: #FFF;
+}
+
+.card-mobile__overlay-text{
+    position: absolute;
+    text-align: center;
+    font-family: 'Nobile', sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    text-shadow: 4px 4px 0px rgb(0 0 0 / 15%), 1px 1px 0 rgb(255 200 200), 2px 2px 0 rgb(255 150 150), 3px 3px 0 rgb(255 125 125);
+    color: #FFF;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 
 .card-mobile__overlay--slide{
     animation: slideTop 1s linear forwards;
@@ -932,3 +961,40 @@ footer {
 .card-mobile__btn:hover{
     opacity: .8;
 }
+
+/* Candle mobile */
+.candle-mobile{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.candle-mobile__item{
+    width: 40px;
+}
+.candle-mobile__day img + img{
+    margin-left: -20px;
+
+}
+.candle-mobile__month img + img{
+    margin-left: -17px;
+
+}
+.candle-mobile__year img + img{
+    margin-left: -17px;
+}
+
+.candle-mobile__year img:last-child{
+    margin-left: -22px;
+}
+.candle-mobile__dash{
+    /* display: none; */
+    width: 34px;
+    height: 10px;
+    border-radius: 6px;
+    background-color: #d27c68;
+    margin:0 -8px;
+    transform: rotate(120deg);
+}
+

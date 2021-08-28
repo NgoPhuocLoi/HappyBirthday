@@ -139,6 +139,10 @@ function hideCandle(){
     }else{
         candle.style.display = 'block'
     }
+
+    if(document.body.offsetWidth < 740){
+        candle.style.display = 'none'
+    }
 }
 
 // -----------------------------------------------------------------
