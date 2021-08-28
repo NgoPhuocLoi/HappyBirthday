@@ -352,7 +352,8 @@ to {
     display: flex;
     justify-content: space-between;
     padding: 0 20px;
-    display: none;
+    /* display: none; */
+    /* z-index: 100; */
 }
 
 .img-slide__item{
@@ -393,7 +394,7 @@ to {
     }
     100%{
         opacity: 0;
-        transform: translateX(340px);
+        transform: translateX(280px);
     }
 }
 @keyframes slide-2 {
@@ -962,39 +963,53 @@ footer {
     opacity: .8;
 }
 
-/* Candle mobile */
-/* .candle-mobile{
+/* ------------------------------------- */
+/* secret */
+.secret{
+    top: 0;left: 0;right: 0;bottom: 0;
+    position: fixed;
+    z-index: 1000;
+    background-color: #e6cccc;
     display: none;
-    justify-content: center;
-    align-items: center;
+    overflow: auto;
+}
+
+.secret__heading{
+    font-size: 50px;
+    text-shadow: 4px 4px 0px rgb(0 0 0 / 15%), 1px 1px 0 rgb(255 200 200), 2px 2px 0 rgb(255 150 150), 3px 3px 0 rgb(255 125 125);
+    color: #333;
+    text-align: center;
     margin-top: 20px;
 }
 
-.candle-mobile__item{
-    width: 40px;
-}
-.candle-mobile__day img + img{
-    margin-left: -20px;
-
-}
-.candle-mobile__month img + img{
-    margin-left: -17px;
-
-}
-.candle-mobile__year img + img{
-    margin-left: -17px;
+.secret__body{
+    font-size: 18px;
+    padding: 0 20px;
 }
 
-.candle-mobile__year img:last-child{
-    margin-left: -22px;
+.secret__body p:last-child{
+    text-align: right;
 }
-.candle-mobile__dash{
-    display: none;
-    width: 34px;
-    height: 10px;
-    border-radius: 6px;
-    background-color: #d27c68;
-    margin:0 -8px;
-    transform: rotate(120deg);
-} */
+
+
+.secret__btn{
+    margin: auto;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #ceabab;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.secret__btn:hover{
+    color: #333;
+    opacity: .8;
+}
+
+
+
 

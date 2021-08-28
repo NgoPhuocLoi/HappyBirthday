@@ -33,6 +33,10 @@ var body = document.querySelector('body'),
     MB_cardOverlay = document.querySelector('.card-mobile__overlay')
     MB_cardCloseBtn = document.querySelector('.card-mobile__btn')
 
+    secret = document.querySelector('.secret')
+    secretClose = document.querySelector('.secret__btn')
+    secretOpens = document.querySelectorAll('.secret-open')
+
 
 // Open giftbox
 giftbox.addEventListener('click',() => {
@@ -131,6 +135,9 @@ closeBtn.onclick = () => {
 
 // --------------------------------------------------------------
 // hide candle when scroll
+if(document.body.offsetWidth < 1024){
+    candle.remove()
+}
 window.onscroll = hideCandle
 
 function hideCandle(){
@@ -162,4 +169,14 @@ MB_cardCloseBtn.onclick = () => {
     setTimeout(() => {
         cardContainer.remove()
     },4000)
+}
+
+for( var secretOpen of secretOpens){
+    secretOpen.onclick = ()=>{
+        secret.style.display = 'block'
+    }
+}
+
+secretClose.onclick = () => {
+    secret.style.display = 'none'
 }

@@ -121,3 +121,10 @@
         height: var(--card-height);
     }
 }
+
+@media (max-width:1024px){
+    .hide-on-mobile_tablet{
+        display: none;
+    }
+
+}
