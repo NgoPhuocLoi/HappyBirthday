@@ -963,7 +963,7 @@ footer {
 }
 
 /* Candle mobile */
-.candle-mobile{
+/* .candle-mobile{
     display: none;
     justify-content: center;
     align-items: center;
@@ -989,12 +989,12 @@ footer {
     margin-left: -22px;
 }
 .candle-mobile__dash{
-    /* display: none; */
+    display: none;
     width: 34px;
     height: 10px;
     border-radius: 6px;
     background-color: #d27c68;
     margin:0 -8px;
     transform: rotate(120deg);
-}
+} */
 
